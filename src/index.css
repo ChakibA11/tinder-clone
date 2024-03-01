@@ -175,7 +175,7 @@ nav .logo-container .logo {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  width: 35%;
+  width: 45%;
   text-align: start;
 }
 
@@ -194,12 +194,17 @@ nav .logo-container .logo {
 .onboarding form .multiple-input-container {
   display: flex;
   flex-direction: row;
+  width: 125%;
 }
 
-.onboarding form input::-webkit-outer-spin-button,
-.onboarding form input::-webkit-inner-spin-button {
+.onboarding form input[type="number"]::-webkit-outer-spin-button,
+.onboarding form input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
+  -moz-appearance: none;
+  /* For Firefox */
+  appearance: none;
   margin: 0;
+  
 }
 
 .onboarding form .multiple-input-container input {

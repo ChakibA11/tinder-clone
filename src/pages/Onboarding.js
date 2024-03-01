@@ -43,6 +43,11 @@ const Onboarding = () => {
         }))
     }
 
+    const handleWheel = (event) => {
+        event.preventDefault();
+      };
+    
+
 
     return (
 
@@ -85,6 +90,7 @@ const Onboarding = () => {
                                 required={true}
                                 value={formData.dob_day}
                                 onChange={handleChange}
+                                onWheel={handleWheel}
                             />
 
                             <input
@@ -95,6 +101,7 @@ const Onboarding = () => {
                                 required={true}
                                 value={formData.dob_month}
                                 onChange={handleChange}
+                                onWheel={handleWheel}
                             />
 
                             <input
@@ -105,6 +112,7 @@ const Onboarding = () => {
                                 required={true}
                                 value={formData.dob_year}
                                 onChange={handleChange}
+                                onWheel={handleWheel}
                             />
                         </div>
 
