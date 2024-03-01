@@ -227,6 +227,11 @@ nav .logo-container .logo {
   width: 10%;
 }
 
+.onboarding form input[type=checkbox] {
+  width: 20px; 
+}
+
+
 .onboarding form input[type=radio]:checked+label {
   border: solid 2px rgb(221, 39, 22);
 }
