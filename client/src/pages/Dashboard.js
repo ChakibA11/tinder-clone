@@ -2,6 +2,7 @@ import Nav from '../components/Nav'
 import { useState } from 'react'
 import TinderCard from 'react-tinder-card'
 import { animated } from 'react-spring';
+import ChatContainer  from '../components/ChatContainer';
 
 
 import { useNavigate } from 'react-router-dom'
@@ -53,7 +54,7 @@ const Dashboard = () => {
     return (
 
         <div className="dashboard">
-            
+            <ChatContainer />
             <div className="swipe-container">
                 <div className="card-container">
 
